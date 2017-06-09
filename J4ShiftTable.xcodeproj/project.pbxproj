@@ -7,8 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11090D181ECD4C3100D2F701 /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11090D171ECD4C3100D2F701 /* Shift.swift */; };
+		11090D1C1ECD83FE00D2F701 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11090D1B1ECD83FE00D2F701 /* Employee.swift */; };
+		111D4F521EE90B5000E57C1C /* RecentlyInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111D4F511EE90B5000E57C1C /* RecentlyInput.swift */; };
+		112435D41ED2D87000310B10 /* AddShiftAssignmentsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112435D31ED2D87000310B10 /* AddShiftAssignmentsCollectionViewController.swift */; };
+		112435D61ED2DD2A00310B10 /* AddShiftAssignmentsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112435D51ED2DD2A00310B10 /* AddShiftAssignmentsCollectionViewCell.swift */; };
+		112435DC1ED7E82400310B10 /* ShiftTableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112435DB1ED7E82400310B10 /* ShiftTableManager.swift */; };
+		112435DE1EDEA9CA00310B10 /* ShiftTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112435DD1EDEA9CA00310B10 /* ShiftTable.swift */; };
+		112435E01EE00C7C00310B10 /* ShiftTableListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112435DF1EE00C7C00310B10 /* ShiftTableListTableViewController.swift */; };
+		112435E21EE3B31D00310B10 /* AddDatePeriodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112435E11EE3B31D00310B10 /* AddDatePeriodTableViewController.swift */; };
+		112435E41EE4547200310B10 /* AddEmployeeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112435E31EE4547200310B10 /* AddEmployeeTableViewController.swift */; };
+		112435E61EE4FA4A00310B10 /* AddAssignmentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112435E51EE4FA4A00310B10 /* AddAssignmentTableViewController.swift */; };
+		112435E81EE5116900310B10 /* AddShiftsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112435E71EE5116900310B10 /* AddShiftsTableViewController.swift */; };
+		11BED5AD1ECB067C00A638F4 /* ShiftTableCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BED5AC1ECB067C00A638F4 /* ShiftTableCollectionViewController.swift */; };
+		11BED5AF1ECB06B800A638F4 /* ShiftTableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BED5AE1ECB06B800A638F4 /* ShiftTableCollectionViewCell.swift */; };
+		11BED5B11ECB102100A638F4 /* ShiftTableCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BED5B01ECB102100A638F4 /* ShiftTableCollectionViewLayout.swift */; };
 		11CCF19B1EC9906C006AE911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CCF19A1EC9906C006AE911 /* AppDelegate.swift */; };
-		11CCF19D1EC9906C006AE911 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CCF19C1EC9906C006AE911 /* ViewController.swift */; };
 		11CCF1A01EC9906C006AE911 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11CCF19E1EC9906C006AE911 /* Main.storyboard */; };
 		11CCF1A31EC9906C006AE911 /* J4ShiftTable.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11CCF1A11EC9906C006AE911 /* J4ShiftTable.xcdatamodeld */; };
 		11CCF1A51EC9906C006AE911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11CCF1A41EC9906C006AE911 /* Assets.xcassets */; };
@@ -16,9 +30,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11090D171ECD4C3100D2F701 /* Shift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shift.swift; sourceTree = "<group>"; };
+		11090D1B1ECD83FE00D2F701 /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		111D4F511EE90B5000E57C1C /* RecentlyInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentlyInput.swift; sourceTree = "<group>"; };
+		112435D31ED2D87000310B10 /* AddShiftAssignmentsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddShiftAssignmentsCollectionViewController.swift; sourceTree = "<group>"; };
+		112435D51ED2DD2A00310B10 /* AddShiftAssignmentsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddShiftAssignmentsCollectionViewCell.swift; sourceTree = "<group>"; };
+		112435DB1ED7E82400310B10 /* ShiftTableManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftTableManager.swift; sourceTree = "<group>"; };
+		112435DD1EDEA9CA00310B10 /* ShiftTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftTable.swift; sourceTree = "<group>"; };
+		112435DF1EE00C7C00310B10 /* ShiftTableListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftTableListTableViewController.swift; sourceTree = "<group>"; };
+		112435E11EE3B31D00310B10 /* AddDatePeriodTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDatePeriodTableViewController.swift; sourceTree = "<group>"; };
+		112435E31EE4547200310B10 /* AddEmployeeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEmployeeTableViewController.swift; sourceTree = "<group>"; };
+		112435E51EE4FA4A00310B10 /* AddAssignmentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAssignmentTableViewController.swift; sourceTree = "<group>"; };
+		112435E71EE5116900310B10 /* AddShiftsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddShiftsTableViewController.swift; sourceTree = "<group>"; };
+		11BED5AC1ECB067C00A638F4 /* ShiftTableCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftTableCollectionViewController.swift; sourceTree = "<group>"; };
+		11BED5AE1ECB06B800A638F4 /* ShiftTableCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftTableCollectionViewCell.swift; sourceTree = "<group>"; };
+		11BED5B01ECB102100A638F4 /* ShiftTableCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftTableCollectionViewLayout.swift; sourceTree = "<group>"; };
 		11CCF1971EC9906C006AE911 /* J4ShiftTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = J4ShiftTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11CCF19A1EC9906C006AE911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11CCF19C1EC9906C006AE911 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		11CCF19F1EC9906C006AE911 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11CCF1A21EC9906C006AE911 /* J4ShiftTable.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = J4ShiftTable.xcdatamodel; sourceTree = "<group>"; };
 		11CCF1A41EC9906C006AE911 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +65,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11090D121ECD4B3100D2F701 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				11CCF1A11EC9906C006AE911 /* J4ShiftTable.xcdatamodeld */,
+				112435DD1EDEA9CA00310B10 /* ShiftTable.swift */,
+				11090D1B1ECD83FE00D2F701 /* Employee.swift */,
+				11090D171ECD4C3100D2F701 /* Shift.swift */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
 		11CCF18E1EC9906C006AE911 = {
 			isa = PBXGroup;
 			children = (
@@ -57,12 +96,23 @@
 			isa = PBXGroup;
 			children = (
 				11CCF19A1EC9906C006AE911 /* AppDelegate.swift */,
-				11CCF19C1EC9906C006AE911 /* ViewController.swift */,
 				11CCF19E1EC9906C006AE911 /* Main.storyboard */,
+				111D4F511EE90B5000E57C1C /* RecentlyInput.swift */,
+				112435E11EE3B31D00310B10 /* AddDatePeriodTableViewController.swift */,
+				112435E31EE4547200310B10 /* AddEmployeeTableViewController.swift */,
+				112435E51EE4FA4A00310B10 /* AddAssignmentTableViewController.swift */,
+				112435E71EE5116900310B10 /* AddShiftsTableViewController.swift */,
+				112435D31ED2D87000310B10 /* AddShiftAssignmentsCollectionViewController.swift */,
+				112435D51ED2DD2A00310B10 /* AddShiftAssignmentsCollectionViewCell.swift */,
+				11BED5AC1ECB067C00A638F4 /* ShiftTableCollectionViewController.swift */,
+				11BED5AE1ECB06B800A638F4 /* ShiftTableCollectionViewCell.swift */,
+				11BED5B01ECB102100A638F4 /* ShiftTableCollectionViewLayout.swift */,
+				112435DF1EE00C7C00310B10 /* ShiftTableListTableViewController.swift */,
+				112435DB1ED7E82400310B10 /* ShiftTableManager.swift */,
 				11CCF1A41EC9906C006AE911 /* Assets.xcassets */,
 				11CCF1A61EC9906C006AE911 /* LaunchScreen.storyboard */,
 				11CCF1A91EC9906C006AE911 /* Info.plist */,
-				11CCF1A11EC9906C006AE911 /* J4ShiftTable.xcdatamodeld */,
+				11090D121ECD4B3100D2F701 /* Core Data */,
 			);
 			path = J4ShiftTable;
 			sourceTree = "<group>";
@@ -140,9 +190,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11CCF19D1EC9906C006AE911 /* ViewController.swift in Sources */,
+				112435E21EE3B31D00310B10 /* AddDatePeriodTableViewController.swift in Sources */,
+				112435D41ED2D87000310B10 /* AddShiftAssignmentsCollectionViewController.swift in Sources */,
+				11090D1C1ECD83FE00D2F701 /* Employee.swift in Sources */,
 				11CCF19B1EC9906C006AE911 /* AppDelegate.swift in Sources */,
+				112435E81EE5116900310B10 /* AddShiftsTableViewController.swift in Sources */,
+				112435D61ED2DD2A00310B10 /* AddShiftAssignmentsCollectionViewCell.swift in Sources */,
+				11BED5AD1ECB067C00A638F4 /* ShiftTableCollectionViewController.swift in Sources */,
+				112435E61EE4FA4A00310B10 /* AddAssignmentTableViewController.swift in Sources */,
+				11090D181ECD4C3100D2F701 /* Shift.swift in Sources */,
+				11BED5B11ECB102100A638F4 /* ShiftTableCollectionViewLayout.swift in Sources */,
+				112435DE1EDEA9CA00310B10 /* ShiftTable.swift in Sources */,
+				111D4F521EE90B5000E57C1C /* RecentlyInput.swift in Sources */,
+				11BED5AF1ECB06B800A638F4 /* ShiftTableCollectionViewCell.swift in Sources */,
+				112435E01EE00C7C00310B10 /* ShiftTableListTableViewController.swift in Sources */,
 				11CCF1A31EC9906C006AE911 /* J4ShiftTable.xcdatamodeld in Sources */,
+				112435DC1ED7E82400310B10 /* ShiftTableManager.swift in Sources */,
+				112435E41EE4547200310B10 /* AddEmployeeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +370,7 @@
 				11CCF1AE1EC9906C006AE911 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

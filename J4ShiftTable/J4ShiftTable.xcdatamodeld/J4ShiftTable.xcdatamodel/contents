@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Employee" representedClassName=".Employee" syncable="YES" codeGenerationType="category">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="shifts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Shift" inverseName="employee" inverseEntity="Shift" syncable="YES"/>
+        <relationship name="shiftTable" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ShiftTable" inverseName="employees" inverseEntity="ShiftTable" syncable="YES"/>
+    </entity>
+    <entity name="Shift" representedClassName=".Shift" syncable="YES" codeGenerationType="category">
+        <attribute name="assignment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="employee" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Employee" inverseName="shifts" inverseEntity="Employee" syncable="YES"/>
+    </entity>
+    <entity name="ShiftTable" representedClassName=".ShiftTable" syncable="YES" codeGenerationType="category">
+        <attribute name="created" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="employees" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Employee" inverseName="shiftTable" inverseEntity="Employee" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Employee" positionX="-3852" positionY="-522" width="128" height="103"/>
+        <element name="Shift" positionX="-3645" positionY="-522" width="128" height="88"/>
+        <element name="ShiftTable" positionX="-4068" positionY="-531" width="128" height="103"/>
+    </elements>
 </model>
