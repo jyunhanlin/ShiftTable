@@ -45,13 +45,17 @@ class ShiftTableCollectionViewController: UICollectionViewController
     }
     
     private var todayIndexPath: IndexPath?
-
-    private func scrollToToday() {
-        if manager.numberOfEmployees() > 0 {
+    private var todayString: String {
+        get {
             let today = Date()
             let fmt = DateFormatter()
             fmt.dateFormat = "MM/dd"
-            let todayString = fmt.string(from: today)
+            return fmt.string(from: today)
+        }
+    }
+
+    private func scrollToToday() {
+        if manager.numberOfEmployees() > 0 {
 
             let dates = manager.getDays()
             
@@ -59,7 +63,7 @@ class ShiftTableCollectionViewController: UICollectionViewController
                 for count in 1..<sections {
                     if todayString == dates[count-1] {
                         let cellIndexPath = IndexPath(item: 0, section: count)
-                        collectionView?.scrollToItem(at: cellIndexPath, at: .top, animated: true)
+                        collectionView?.scrollToItem(at: cellIndexPath, at: .centeredVertically, animated: true)
                         todayIndexPath = cellIndexPath
                         print("scroll to \(cellIndexPath)")
                     }
@@ -102,11 +106,32 @@ class ShiftTableCollectionViewController: UICollectionViewController
                     } else if indexPath.item == 0 {
                         let days = manager.getDays()
                         stcvc.label.text = days[indexPath.section-1]
+                        
+                        if todayString == stcvc.label.text {
+                            todayIndexPath = indexPath
+                        }
                     } else if indexPath.section != 0 {
                         let date = manager.getDays()[indexPath.section-1]
                         stcvc.label.text = manager.shiftAssignment[indexPath.item-1].assignment[date]
                     }
                 }
+                
+                if indexPath.section == 0 {
+                    stcvc.label.textColor = UIColor.white
+                    stcvc.backgroundColor = UIColor(red: 0x88/255, green: 0xAF/255, blue: 0x4B/255, alpha: 1)
+                } else {
+                    stcvc.label.textColor = UIColor.black
+                    if indexPath.section % 2 == 0 {
+                        stcvc.backgroundColor = UIColor(white: 242/255.0, alpha: 1)
+                    } else {
+                        stcvc.backgroundColor = UIColor.white
+                    }
+                    
+                    if indexPath.section == todayIndexPath?.section {
+                        stcvc.backgroundColor = UIColor(red: 0xCC/255, green: 0xF8/255, blue: 0xFF/255,alpha: 1)
+                    }
+                }
+                
             }
         }
         return cell

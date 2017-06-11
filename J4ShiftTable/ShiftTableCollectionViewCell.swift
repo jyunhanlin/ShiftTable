@@ -10,10 +10,5 @@ import UIKit
 
 class ShiftTableCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var label: UILabel! {
-        didSet {
-            self.layer.borderWidth = 1.0
-            self.layer.borderColor = UIColor.black.cgColor
-        }
-    }
+    @IBOutlet weak var label: UILabel!
 }

@@ -12,8 +12,8 @@ class ShiftTableCollectionViewLayout: UICollectionViewLayout {
 
     // Used for calculating each cells CGRect on screen.
     // CGRect will define the Origin and Size of the cell.
-    let CELL_HEIGHT = 30.0
-    let CELL_WIDTH = 100.0
+    var CELL_HEIGHT = 30.0
+    var CELL_WIDTH = 100.0
     let STATUS_BAR = UIApplication.shared.statusBarFrame.height
     
     // Dictionary to hold the UICollectionViewLayoutAttributes for
@@ -103,6 +103,8 @@ class ShiftTableCollectionViewLayout: UICollectionViewLayout {
         // Acknowledge data source change, and disable for next time.
         dataSourceDidUpdate = false
         
+        
+        
         // Cycle through each section of the data source.
         
         if let sectionCount = collectionView?.numberOfSections, sectionCount > 0 {
@@ -110,6 +112,15 @@ class ShiftTableCollectionViewLayout: UICollectionViewLayout {
                 
                 // Cycle through each item in the section.
                 if let rowCount = collectionView?.numberOfItems(inSection: section), rowCount > 0 {
+                    if rowCount < 4 {
+                        if let boundsWidth = collectionView?.bounds.size.width {
+                            CELL_WIDTH = Double(Int(boundsWidth) / rowCount)
+                        }
+                    } else {
+                        CELL_WIDTH = 100.0
+                    }
+                    
+                    
                     for item in 0...rowCount-1 {
                         
                         // Build the UICollectionVieLayoutAttributes for the cell.

@@ -80,7 +80,8 @@ class AddShiftAssignmentsCollectionViewController: UICollectionViewController
                     let days = manager.getDays()
                     stcvc.label.text = days[indexPath.section-1]
                 } else if indexPath.section != 0 {
-                    stcvc.label.text = ""
+                    let date = manager.getDays()[indexPath.section-1]
+                    stcvc.label.text = manager.shiftAssignment[indexPath.item-1].assignment[date]
                 }
             }
         }
